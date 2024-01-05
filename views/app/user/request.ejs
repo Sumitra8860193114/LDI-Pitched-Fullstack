@@ -1,0 +1,35 @@
+<%- include("../../header") -%>
+
+    <link rel="stylesheet" href="/stylesheets/app/request.css">
+    <div class="d-flex justify-content-center">
+        <h5>Request Form</h5>
+    </div>
+    <div class="d-flex justify-content-center card-container">
+        <form class="col-12 col-md-6 justify-content-center form-container" id="request-form">
+
+            <div class="mb-3 question">
+                <label for="name" class="form-label">Write your name here</label>
+                <input required type="text" class="form-control" placeholder="Enter title" name="name" id="name">
+            </div>
+    
+            <div class="mb-3 question">
+                <label for="title" class="form-label">Title of the pitch</label>
+                <input required type="text" class="form-control" placeholder="Enter category/subject" name="title" id="title">
+            </div>
+    
+            <div class="mb-3 question">
+                <label for="content" class="form-label">Content</label>
+                <textarea required type="text" class="form-control" rows="8" placeholder="Enter content here" name="content" id="content"></textarea>
+            </div>
+            
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="/javascript/app/user/request.js"></script>
+
+<%- include("../../footer") -%>
